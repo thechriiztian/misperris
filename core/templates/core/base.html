@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis Perris</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="{% static 'core/js/inicializacion.js' %}"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="{% static 'core/img/logo.png' %}" alt="logo">
+        <ul class="navegacion">
+                <li> <a href="">Inicio</a> </li>
+                <li><a href="">Quienes Somos</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Contactanos</a></li>
+                </ul>
+    </header>
+
+<div class="landing">
+        <div class="slider">
+            <div>
+                <img title="Adopta! Cambia y Salva una vida" class="imagen_landing" src="{% static 'core/img/Apolo.jpg' %}" alt="misperris">   
+            </div>
+            <div>
+                <img title="Un excelente compañero de vida" class="imagen_landing" src="{% static 'core/img/Duque.jpg' %}" alt="misperris">   
+            </div>
+            <div>
+                <img title="Tom mas que una mascota es parte de la familia" class="imagen_landing" src="{% static 'core/img/Tom.jpg' %}" alt="misperris">   
+            </div>
+        </div> 
+    <div class="landing_inferior">
+        <h2 class="color_blanco">+56998765431</h2> 
+        <h1 class="color_blanco centrar_texto ">Rescate y adopcion de perros callejeros</h1>
+        <ul class="social">
+            <li>
+                <a href="http://twitter.com">
+                    <img src="{% static 'core/img/social-twitter.png' %}" alt="twitter">
+                </a>
+            </li>
+            <li>
+                    <a href="http://facebook.com">
+                <img src="{% static 'core/img/socialfacebook.png' %}" alt="facebook">
+                </a>
+            </li>
+            <li>
+                    <a href="http://twitter.com">
+                <img src="{% static 'core/img/social-inst.png' %}" alt="instagram">
+                </a>
+            </li>
+            <li>
+                    <a href="http://gmail.com">
+                <img src="{% static 'core/img/socialplus.png' %}" alt="gmail">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="contenido">
+    {% block contenido %}
+    
+    {% endblock contenido %}
+</div>
+
+<footer>
+    <br>
+        <h3 class="letra_final" >Desarrollo web y mobil</h3>
+
+    </footer>
+
+</body>
+</html>

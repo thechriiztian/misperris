@@ -1,0 +1,291 @@
+*
+{
+margin:0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+.bx-wrapper {
+    background-color:rgb(133,212,183)!important;
+    border:none!important;
+    box-shadow: none!important;
+}
+
+.bx-caption {
+
+ background: none !important;
+ position: relative !important;
+ top: -100px !important;
+ left: 500px !important;
+}
+
+span{
+
+    color: black !important;
+    font-family: Brush Script MT !important;
+    font-size: 40px !important;
+}
+
+.galeria img {
+    width: 300px;
+   
+    
+}
+
+
+header{
+width: 100%;
+height: 90px;
+background-color: rgb(133,212,183);
+
+}
+
+.logo{
+    float :left;
+    width: 400px;
+    height: 80px;
+    margin-top:10px;
+    margin-left:10px;
+
+}
+
+.navegacion{
+    float:left;
+    margin-top: 20px;
+    margin-left: 100px;
+   
+    
+}
+
+.navegacion li {
+    display: inline-block;
+    margin-right: 20px;
+    width: 100px;
+    height: 36px;
+    background-color:rgb(109, 204,170);
+    text-align: center;
+    padding-top: 16px;
+    transition: border-radius 0.5s;
+}
+
+.navegacion li:hover {
+    /*estos estilos se aplicaran cuando se pase el mouse por encima
+    del elemento*/
+    border-radius: 20px;
+
+}
+
+.navegacion li a {
+    color:white;
+    font-weight: center;
+}
+
+.landing {
+    width: 100%;
+    height: 550px;
+    background-color: rgb(109, 204,170);
+}
+
+.botonformulario{
+    margin: left;
+    margin-top: 100px;
+}
+
+
+.imagen_landing{
+    width: 900px;
+    height: 400px; 
+    margin:auto;
+    display: block;
+    margin-left:150px;
+    margin: auto;
+}
+.eslogan {
+    color:white;
+    margin-left: 20px;
+    font-size: 15px;
+    float: left;
+}
+
+.numero {
+    color:white;
+    margin-left: 20px;
+    font-size: 25px;
+    float: left;
+
+}
+
+.contenido {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido2 {
+    background-color: rgb(133,212,183);
+    display: flex;
+    
+}
+
+
+.formulario{
+    background-color:  rgb(133,212,183);
+   
+}
+
+.formulario2{
+    display:flex;
+    margin-left: 20%;
+    width: 300px;
+}
+
+
+
+.asd
+{
+    float: right;
+}
+.contenido > div {
+    width: 50%;
+}
+
+.color_blanco {
+    color:white;
+}
+
+.color_gris{
+    color: rgb(106,111,127)
+}
+
+.social {
+    float:right;
+    ;
+}
+
+.social li {
+    display:inline-block;
+    margin-right: 35px;
+    margin-top: -3%;
+}
+
+.social li img {
+    
+    width: 60px;
+    height: 60px;
+    transition: all 1s;
+
+}
+
+.social li img:hover {
+   
+    width: 50px;
+    height: 50px;
+    
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(230,230,230); 
+  
+    }
+
+
+.letra_final{
+ color: rgb(151,158,160);
+
+}
+
+
+.landing_inferior {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -3%;
+}
+
+.centrar_texto {
+    text-align: center;
+}
+
+.color_blanco {
+    color:white;
+}
+
+
+
+@media (max-width:1024px) {
+
+    .landing_inferior {
+        flex-direction: column-reverse;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .contenido > div {
+        width: 100%;
+    }
+
+    /*los estilos que estan aqui dentro de esta media query
+    se aplicaran a pantallas con ancho maximo de 1024px (moviles)*/
+    .imagen_landing {
+        width: 100%;
+        height: auto;
+        /*display: none;*/
+    }
+
+    .eslogan {
+        text-align: center;
+        float:none;
+    }
+
+    .social {
+        float:none;
+        text-align: center;
+    }
+
+    header {
+        height: 350px;
+    }
+
+    .navegacion {
+       float:none;
+       width: 80%;
+       margin:auto;
+    }
+
+    .navegacion li {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .landing {
+        height: auto;
+    }
+
+    .galeria img {
+        width: 300px;
+       
+    }
+    .contenido2 {
+        background-color: rgb(133,212,183);
+        float: none;
+        width:80%;
+        margin:auto;
+    }
+}
+
+.margen{
+   margin-right: 80%;
+}
+
+.margen2{
+float: right;
+
+}
+
+.margen3{
+margin-right: 10%;
+}

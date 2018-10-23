@@ -1,0 +1,27 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<div>
+    <h1 class="centrar_texto margen">RESCATE</h1>
+    <h4 class="color_gris">ETAPA UNO</h4>
+    <h2 class="color_gris">_______</h2>
+    
+    <br>
+    <p class="color_gris margen3">Rescatamos perros en situacion de peligro y/o abandono.Los rehabilitamos y los preparamos para buscarles un hogar.</p>
+   <br>
+    <img class="margen2 margen3" src="{% static 'core/img/rescate.jpg' %}" alt="rescate">
+</div>
+<div>
+    <img src="{% static 'core/img/crowfunding.jpg' %}" alt="comida">
+    
+    <h1 class="centrar_texto margen">CROWFUNDING</h1>
+    <h4 class="color_gris">FINANCIAMIENTO</h4>
+    <h2 class="color_gris">_______</h2>
+    <br>
+    <p class="color_gris">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamiento para seguir ayudando.</p>
+</div>
+
+{% endblock contenido %}
