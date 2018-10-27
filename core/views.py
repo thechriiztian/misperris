@@ -11,6 +11,7 @@ def galeria(request):
     return render(request, 'core/galeria.html')
 
 def formularioMascota(request):
+<<<<<<< HEAD
     
     razas = Raza.objects.all()
     estados = Estado.objects.all()
@@ -22,6 +23,15 @@ def formularioMascota(request):
 
 
 
+=======
+    #IMPORTANTEEEE¡¡¡¡¡¡¡¡
+    razas = Raza.objects.all()
+    
+    variables = {
+        'razas': razas  
+    }
+
+>>>>>>> fb0d23d9c31806c2b25401b779f5992ed1e61266
     if request.POST:
         mascota = Mascota()
         mascota.nombre = request.POST.get('txtNombre')
