@@ -4,16 +4,20 @@
 
 {% block contenido %}
 <h2>Registrar Mascota</h2>
-<form  action="formularioMascota" method="POST">
-        
+<form  action="" id ="formularioMascota" method="POST">
+    {% csrf_token %} 
     <label for="">Nombre Mascota</label>
     <input type="" name="txtNombres" id="txtNombres">
     <br>
     <br>
     <label for="">Raza</label>
     <select name="cboRaza" id="cboRaza">
-        <option value="3">Pitbull</option>
-        <option value="2">Chihuahua</option>
+        <option value="3">Seleccionar</option>
+
+        {% for m in razas %}
+        <option value="{{ m.id }}">{{ m.nombre }}</option>
+        {% endfor %}
+        
     </select>
     <br>
     <br>
@@ -35,13 +39,18 @@
     <br>
     <label for="">Estado</label>
     <select name="cboEstado" id="cboEstado">
-        <option value="1">rescatado</option>
-        <option value="2">disponible</option>
-        <option value="3">adoptado</option>
+        <option value="1">Seleccionar</option>
+       
+        {% for e in estados %}
+        <option value="{{ m.id }}">{{ m.nombre }}</option>
+        {% endfor %}
+
     </select>
     <br>
     <br>
     <input type="button" value="Guardar" id="btnGuardar" name="btnGuardar">
 </form>
+
+<h3>{{ mensaje }}</h3>
 
 {% endblock contenido %}
