@@ -33,7 +33,6 @@ def formularioMascota(request):
         raza = Raza()
         raza.id = int(request.POST.get('cboRaza'))
         mascota.raza = raza
-        mascota.save()
         try:
             mascota.save()
             variables['mensaje'] = 'Guardado correctamente'
